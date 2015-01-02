@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Formulários com HTML</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<form method="post" action="" target="_blank" name="form1" id="form1">
+		
+			<fieldset>
+				<legend>Este é o nosso formulário</legend>
+
+				<p><label for="nome">Nome</label>
+					<input type="text" name="nome" id="nome" size="90"></p>
+
+				<p><label for="senha">Senha</label>
+					<input type="password" name="senha" id="senha"></p>
+
+				<p><label for="email">E-mail</label>
+					<input type="text" name="email" id="email" value="seuemail.com.br"></p>
+
+				<p><label for="telefone">Telefone</label>
+					<input type="text" name="telefone" id="telefone" maxlenght="9"></p>
+
+				<p><strong>Deseja receber as nossas atualizações?</strong></p>
+				<p><label for="sim">Sim</label><input type="radio" name="atualizacoes" id="sim"></p>
+				<p><label for="nao">Não</label><input type="radio" name="atualizacoes" id="nao"></p>
+
+				<hr color="red" size="1"><br>
+
+				<input type="hidden" name="informacao_escondida" value="essa informacao vai escondida">
+
+				<p><strong>O que você gostaria de aprender?</strong></p> 
+				<ul>
+					<li><label for="op1">HTML</label>
+						<input type="checkbox" name="aprender[]" value="HTML" id="op1" checked>
+					</li>
+					<li><label for="op2">CSS</label>
+						<input type="checkbox" name="aprender[]" value="CSS" id="op2">
+					</li>
+					<li><label for="op3">Java Script</label>
+						<input type="checkbox" name="aprender[]" value="Java Script" id="op3">
+					</li>
+				</ul>
+
+				<p><label for="descricao">Descreva o que você achou das aulas:</label></p>
+				<p><textarea cols="90" rows="10" name="descricao" id="descricao">Coloque o seu texto aqui...</textarea></p>
+
+				<p><label for="pais">Qual o seu país?</label></p>
+				<select name="pais" id="pais">
+					<option value="Argentina">Argentina</option>
+					<option value="Uruguai">Uruguai</option>
+					<option value="Chile">Chile</option>
+					<option value="Brasil" selected>Brasil</option>
+				</select>
+
+
+				<p><label for="cores">Quais são as suas cores preferidas?</label></p>
+				<select name="cores" id="cores" multiple>
+					<option value="Azul">Azul</option>
+					<option value="Preto">Preto</option>
+					<option value="Branco">Branco</option>
+					<option value="Vermelho">Vermelho</option>
+				</select>
+
+				<hr color="red" size="1"><br>
+
+				<input type="reset" value="Limpar campos">
+				<input type="submit" value="Enviar">
+
+			</fieldset>	
+		</form>
+
+		<br><br><br><br>
+		<form method="get" action="" name="form2" id="form2">
+		
+			<fieldset>
+				<legend>Este é o nosso formulário 2</legend>
+
+				<p><label for="nome2">Nome2</label>
+					<input type="text" name="nome2" id="nome2" size="90"></p>
+
+				<p><label for="senha2">Senha2</label>
+					<input type="password" name="senha2" id="senha2"></p>
+
+				<input type="reset" value="Limpar campos">
+				<input type="submit" value="Enviar">
+
+			</fieldset>	
+		</form>
+
+		<br><br><br><br>
+	</body>
+</html>
