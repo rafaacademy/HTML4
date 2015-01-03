@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Contato</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Tutorial de HTML">
+		<meta name="keywords" content="HTML, tutorial html, apender html">
+		<meta name="author" content="Rafael Paulino">
+	</head>
+	<body bgcolor="#F1F1F1" text="#333" link="#577EC6" alink="green" vlink="#000000">
+		
+		<h6>
+			<font face="arial">
+				Contato
+			</font>
+		</h6>
+		<table width="90%" align="center">
+			<tr>
+				<th><font face="verdana">Clique na imagem e veja o que acontece</font></th>
+				<th><font face="verdana">Entre em contato</font></th>
+			</tr>
+			<tr>
+				<td><strong>A sua mensagem é:</strong> <span id="msn">Nenhuma mensagem por enquanto!</span></td>
+			</tr>
+			<tr>
+				<td width="410">
+					<map name="shape">
+						<area shape="circle" alt="Imagem de mapa" coords="10, 10, 380, 380" onclick="clicou();">
+					</map>
+					<center><img src="img/03.jpg" usemap="#shape" width="400"></center>
+				</td>
+				<td rowspan="2">
+					<form method="get" action="http://www.google.com.br" name="form2" id="form2">
+					
+						<fieldset>
+							<legend>Entre em contato</legend>
+
+							<p><label for="nome">Nome</label>
+								<input type="text" name="nome" id="nome" size="70"></p>
+
+							<p><label for="email">E-mail</label>
+								<input type="text" name="email" id="email"></p>
+
+							<p><label for="telefone">Telefone</label>
+								<input type="text" name="telefone" id="telefone" maxlength="9"></p>
+
+							<p><label for="mensagem">Mensagem:</label></p>
+							<p><textarea cols="50" rows="10" name="mensagem" id="mensagem"></textarea></p>
+
+							<input type="reset" value="Limpar campos">
+							<input type="submit" value="Enviar">
+
+						</fieldset>	
+					</form>
+				</td>
+			</tr>
+		</table>
+
+
+	<script type="text/javascript">
+		function clicou()
+		{
+			var msn = prompt("Coloque a sua mensagem", "");
+
+			if (msn != null) {
+			    document.getElementById("msn").innerHTML = msn;
+			}
+		}
+	</script>
+	</body>
+</html>
